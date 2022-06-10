@@ -92,7 +92,7 @@ class Character implements Fighter {
     this._lifePoints = this._maxLifePoints;
   }
 
-  special(enemy: Fighter) {
+  special(enemy: Fighter | SimpleFighter) {
     return enemy.receiveDamage(this.strength * 2);
     // LEMBRAR DE FAZER UM SISTEMA LEGAL DEPOIS
   }
